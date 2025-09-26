@@ -7,13 +7,14 @@
 body {
   font-family: 'Nunito', sans-serif;
   color: #384047;
+  background-color:#8a97a0;
 }
 
 form {
   max-width: 300px;
   margin: 10px auto;
   padding: 10px 20px;
-  background: #f4f7f8;
+  background:#4ab369; //#f4f7f8;
   border-radius: 8px;
 }
 
