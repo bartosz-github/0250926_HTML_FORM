@@ -75,6 +75,16 @@ button {
   margin-bottom: 10px;
 }
 
+/*HTML VALIDATION \/ */
+
+      input:invalid {
+        border: 2px dashed rgb(255, 0, 179);
+      }
+
+      input:valid {
+        border: 2px solid rgb(16, 223, 68);
+      }
+/*HTML VALIDATION /\ */
 
 fieldset {
   margin-bottom: 30px;
