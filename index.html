@@ -50,10 +50,11 @@
         <input type="date" id="date" name="date" value="2025-09-22">
 
         <textarea id="bio" name="user_bio">
-        <!--Hidden form element: commonly used in keeping track of database records that need updating with the form -->
-        <input type="hidden" id="postId" name="postId" value="34657" />
-Textarea
+        Textarea
         </textarea>
+
+<!--Hidden form element: commonly used in keeping track of database records that need updating with the form -->
+        <input type="hidden" id="postId" name="postId" value="34657" />
 
         <input type="submit">
 
@@ -72,6 +73,13 @@ Textarea
 
 <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/hidden-->
 <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#attributes-->
+
+Warning: HTML form validation is not a substitute for scripts that ensure that the entered data is in the proper format. 
+It's far too easy for someone to make adjustments to the HTML that allow them to bypass the validation, 
+or to remove it entirely. It's also possible for someone to bypass your HTML entirely and submit the data directly 
+to your server. If your server-side code fails to validate the data it receives, disaster could strike when 
+improperly-formatted data is submitted (or data which is too large, of the wrong type, and so forth).
+
 
 </body>
 </html>
