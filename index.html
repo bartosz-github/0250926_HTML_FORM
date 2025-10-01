@@ -8,20 +8,30 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+
+    <div>
+        <!--dates dates dates-->
+    <script>
+        date = new Date().toLocaleDateString();
+        //let today = date;
+        document.write(date);
+    </script>
+    </div>
+
     
     <form action="index.html" method="post">
 
         <h1>P x t x x n t R x c x c d C x r d</h1>
 
-        <input type="text" id="fname" name="user_fname" value="FIRST NAME">
+        <input type="text" id="fname" name="user_fname" value="FIRST NAME" autocapitalize="on">
 
-        <input type="text" id="mname" name="user_mname" value="MIDDLE NAMES">
+        <input type="text" id="mname" name="user_mname" value="MIDDLE NAMES" autocapitalize="on">
 
         <input type="text" id="sname" name="user_sname" value="SURNNAME">
 
-        <input type="date" id="D.O.B." name="user_name" value="D.O.B." min="1925-01-01" max="2025-10-27">
+        <input type="date" id="D.O.B." name="user_DOB" value="D.O.B." min="1925-01-01" max="2025-10-27" value=date>
 
-        <input type="email" id="mail" name="user_email" value="EMAIL">
+        <input type="email" id="mail" name="user_email" value="email@email.com">
 
         <input type="tel" id="phone" name="user_phone" value="00000000000">
 
@@ -40,6 +50,8 @@
         <input type="date" id="date" name="date" value="2025-09-22">
 
         <textarea id="bio" name="user_bio">
+
+        
 Textarea
         </textarea>
 
@@ -58,6 +70,8 @@ Textarea
 <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form#novalidate-->
 <!--https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation-->
 
+<!--https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/hidden-->
+<!--https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#attributes-->
 
 </body>
 </html>
