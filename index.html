@@ -22,41 +22,119 @@
     <form action="index.html" method="post">
 
         <h1>P x t x x n t R x c x c d C x r d</h1>
+        <fieldset>
 
-        <input type="text" id="fname" name="user_fname" value="FIRST NAME" title="First Name">
+            <legend><span class="number">1</span> Your basic info</legend>
 
-        <input type="text" id="mname" name="user_mname" value="MIDDLE NAMES">
 
-        <input type="text" id="sname" name="user_sname" value="SURNNAME">
+            <label for="fname">Enter your first name: </label>
+            <input type="text" id="fname" name="user_fname" value="" title="First Name">
 
-        <input type="date" id="D.O.B." name="user_DOB" value="D.O.B." min="1925-01-01" max="2025-10-27" value=date title="Date of Birth">
+            <label for="mname">Enter your middle names: </label>
+            <input type="text" id="mname" name="user_mname" value="" title="Middle Names">
 
-        <input type="email" id="mail" name="user_email" value="email@email.com">
+            <label for="sname">Enter your surname: </label>
+            <input type="text" id="sname" name="user_surname" value="" title="Surname">
 
-        <input type="tel" id="phone" name="user_phone" value="00000000000" title="Phone number">
+            <label for="D.O.B.">Enter your date of birth: </label>
+            <input type="date" id="D.O.B." name="user_DOB" min="1925-01-01" max="2025-10-27" title="Date of Birth in dd/mm/yyyy format">
 
-        <input type="text" id="allergies" name="user_allergies" value="ALLERGIES">
+            <label for="username">Your username: </label> <!--(Select) Your username-->
+            <input type="text" id="username" name="user_username" value="" title="Username">
 
-        <input type="tel" id="phone" name="user_doctorphone" value="00000000000">
+            <label for="password">Your password: </label>
+            <input type="password" id="password" name="user_password" value="" title="Password">
 
-        <input type="text" id="doctor" name="user_doctorname" value="DOCTOR">
+            <label for="mail">Enter your email address: </label>
+            <input type="email" id="mail" name="user_email" value="" title="Email">
 
-        <input type="text" id="doctoraddress" name="user_doctoraddress" value="DOCTOR ADDRESS">
+            <label for="mphone">Enter your mobile phone number: </label>
+            <input type="tel" id="mphone" name="user_mobilephone" value="00000000000" title="Mobile phone number">
 
-        <input type="text" id="username" name="user_username" value="USERNAME">
+            <label for="sphone">Enter your stationary phone number: </label>
+            <input type="tel" id="sphone" name="user_stationaryphone" value="00000000000" title="Stationary phone number">
 
-        <input type="password" id="password" name="user_password" value="00000000000">
+            <label for="allergies">Please select your alergies:</label> <!--MULTI SELECT your allergies:-->
+            <select id="allergies" name="user_allergies" value="" title="Allergies">
+                    <option value="none">No allergies</option>
+                <optgroup label="Food allergies">
+                    <option value="treenuts">Tree Nuts</option>
+                    <option value="peanuts">Peanuts</option>
+                    <option value="shellfish">Shellfish</option>
+                    <option value="wheat">Wheat</option>
+                </optgroup>
+                <optgroup label="Pollen">
+                    <option value="pollen">Pollen</option>
+                </optgroup>
+                <optgroup label="Mold">
+                    <option value="molds">Mold Spores</option>
+                </optgroup>
+                <optgroup label="Dust Mites">
+                    <option value="dustmites">Dust Mites</option>
+                </optgroup>
+                <optgroup label="Medications">
+                    <option value="penicillin">Penicillin</option>
+                    <option value="salicylates">Salicylates</option>
+                </optgroup>
+                <optgroup label="Latex">
+                    <option value="latex">Latex</option>
+                </optgroup>
+                <optgroup label="Animals">
+                    <option value="catdander">Cat Dander</option>
+                </optgroup>
+            </select>
 
-        <input type="date" id="date" name="date" value="2025-09-22">
+            <!-- checkboxes-->
+            <label>Ilnesses</label>
+            <input type="checkbox" id="back" value="ilnesses history" name="user_ilnesses"><label class="light" for="back">Back</label><br>
 
-        <textarea id="bio" name="user_bio">
-Textarea
-        </textarea>
+            <input type="checkbox" id="eyesight" value="ilnesses history" name="user_ilnesses"><label class="light" for="eyesight">Eyesight</label><br>
 
+            <input type="checkbox" id="diabetees" value="ilnesses history" name="user_ilnesses"><label class="light" for="diabetees">Diabetees</label><br>
+
+            <input type="checkbox" id="hypertension" value="ilnesses history" name="user_ilnesses"><label class="light" for="hypertension">Hypertension</label><br>
+
+            <input type="checkbox" id="mentalhealth" value="ilnesses history" name="user_ilnesses"><label class="light" for="mentalhealth">Mental Health</label>
+
+
+
+
+
+
+            <label for="doctor">Enter your doctor's name: </label>
+            <input type="text" id="doctor" name="user_doctorname" value="" title="Doctor's name">
+
+            <label for="drphone">Doctor's phone number: </label>
+            <input type="tel" id="drphone" name="user_doctorphone" value="" title="Doctor's phone number">
+
+            <label for="doctoraddress">Doctor's phone number: </label>
+            <input type="text" id="doctoraddress" name="user_doctoraddress" value="" title="Doctor's address">
+
+            <label for="dateoflastvisit">Date of your last visit: </label>
+            <input type="date" id="dateoflastvisit" name="dateoflastvisit" value="" title="Date of your last visit">
+
+            <!--Radio button: Current Biological Gender male/female -->
+            <label>Sex:</label>
+            <input type="radio" id="male" value="male" name="user_sex"><label for="male" class="light">Male</label>
+            <br>
+            <input type="radio" id="female" value="female" name="user_sex"><label for="female" class="light">Female</label>
+
+        </fieldset>
+        <fieldset>
+
+            <legend><span class="number">2</span> Your profile</legend>
+
+            <label for="bio">Notes </label>
+            <textarea id="bio" name="user_bio" value="" title="Date of your last visit">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores a illum exercitationem nostrum ullam voluptatum facere, vero, laboriosam quam odit rerum aliquid maiores nihil atque reiciendis, suscipit ipsam fugiat corrupti?
+            </textarea>
+
+        </fieldset>
 <!--Hidden form element: commonly used in keeping track of database records that need updating with the form -->
+
         <input type="hidden" id="postId" name="postId" value="34657" />
 
-        <input type="submit">
+        <button type="submit">Sign Up</button>
 
 <!--ENDED-->
 <!--<input type="date"> -->
