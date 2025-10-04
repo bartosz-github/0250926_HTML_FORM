@@ -39,6 +39,18 @@
             <label for="D.O.B.">Enter your date of birth: </label>
             <input type="date" id="D.O.B." name="user_DOB" min="1925-01-01" max="2025-10-27" title="Date of Birth in dd/mm/yyyy format">
 
+            <!--Radio button: Current Biological Gender male/female -->
+            <label>Sex:</label>
+            <input type="radio" id="male" value="male" name="user_sex"><label for="male" class="light">Male</label>
+            <br>
+            <input type="radio" id="female" value="female" name="user_sex"><label for="female" class="light">Female</label>
+            <br>
+
+        </fieldset>
+        <fieldset>
+
+            <legend><span class="number">2</span> Details</legend>
+
             <label for="username">Your username: </label> <!--(Select) Your username-->
             <input type="text" id="username" name="user_username" value="" title="Username">
 
@@ -88,7 +100,6 @@
                 </optgroup>
             </select>
 
-            <!-- checkboxes-->
             <label>Ilnesses</label>
             <input type="checkbox" id="back" value="ilnesses history" name="user_ilnesses"><label class="light" for="back">Back</label><br>
 
@@ -99,7 +110,7 @@
             <input type="checkbox" id="hypertension" value="ilnesses history" name="user_ilnesses"><label class="light" for="hypertension">Hypertension</label><br>
 
             <input type="checkbox" id="mentalhealth" value="ilnesses history" name="user_ilnesses"><label class="light" for="mentalhealth">Mental Health</label>
-
+            <br>
 
 
             <label for="doctor">Enter your doctor's name: </label>
@@ -108,22 +119,16 @@
             <label for="drphone">Doctor's phone number: </label>
             <input type="tel" id="drphone" name="user_doctorphone" value="" title="Doctor's phone number">
 
-            <label for="doctoraddress">Doctor's phone number: </label>
+            <label for="doctoraddress">Doctor's address: </label>
             <input type="text" id="doctoraddress" name="user_doctoraddress" value="" title="Doctor's address">
 
             <label for="dateoflastvisit">Date of your last visit: </label>
             <input type="date" id="dateoflastvisit" name="dateoflastvisit" value="" title="Date of your last visit">
 
-            <!--Radio button: Current Biological Gender male/female -->
-            <label>Sex:</label>
-            <input type="radio" id="male" value="male" name="user_sex"><label for="male" class="light">Male</label>
-            <br>
-            <input type="radio" id="female" value="female" name="user_sex"><label for="female" class="light">Female</label>
-
         </fieldset>
         <fieldset>
 
-            <legend><span class="number">2</span> Your profile</legend>
+            <legend><span class="number">3</span> Your profile</legend>
 
             <label for="bio">Notes </label>
             <textarea id="bio" name="user_bio" value="" title="Date of your last visit">
